@@ -6,6 +6,9 @@
     position:relative;
  
 }
+html{
+    scroll-behavior: smooth;
+}
 nav h1{
     font-size: xx-large;
     font-style: italic;
@@ -55,8 +58,8 @@ nav ul li a:hover{
 }
 
 .detail h2{
-    font-size: 40px;
-   
+    margin-left: 30px;
+    font-size: 40px;  
     color: #111010;
    
 }
@@ -69,6 +72,7 @@ span{
 }
 
 .detail p{
+    margin-left: 30px;
     color: rgb(39, 34, 34);
     line-height: 22px;
 }
@@ -322,15 +326,13 @@ html{
 }
 body{
     font:16px/1.6 Arial, sans-serif;
+  
 }
 footer{
     position: static;
     bottom: 0;
 }
- @media (max-height:800px){
-    footer { position: static; }
-    header { padding-top: 40px; }
- }
+
  .footer-distributed{
     background-color: #1c1a1f;
     box-sizing: border-box;
@@ -390,7 +392,7 @@ footer{
     background-color: #2397f0;
     color: #ffffff;
     font-size: 17px;
-    width: 34px;
+    width: 35px;
     height: 35px;
     border-radius: 50%;
     text-align: center;
@@ -457,18 +459,4 @@ footer{
     display: inline-block;
     background: #ff004f;
     margin-bottom: 10px;
-}
- @media (max-width: 880px){
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    } 
- .footer-distributed .footer-center i{
-    margin-left: 0;
-
- }
 }
