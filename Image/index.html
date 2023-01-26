@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="footer, address, phone, icons" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/400,700" />
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6be1aba7e.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+
+  <div class="hero">
+      <nav>
+         <h1>SHERYL<span>iglesias</span></h1>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Hire Me</a></li>
+         </ul>
+      </nav>
+ <section class="bgimage" id="home">
+    <div class="detail">
+        <h2 class="hero_title">My Profile</h2>
+        <p class="hero_desc">This is my official portfolio website to shows all
+          <br/>details and work experience web development
+        </p>       
+    </div>       
+   </div>
+ </section>
+
+ <!-- about section-->
+
+ <div class="about">
+  <div class="container">
+   <div class="row">
+    <div class="about-col-1">
+      <img src="logo1.jpg">
+    </div>
+     <div class="about-col-2">
+      <h1>About Me</h1>
+      <p>I am Sheryl, currently working as OFW while studying Full Stack Development, 
+         I am ambitious and hardworking individual. Furthermore, I am adept at handling
+         multiple tasks on a daily basis competently and at working well under pressure.
+         As a beginner I am eager to join a team where I can contribute and learn.  I have 
+         a high capacity for work, commitment and responsibility, interest in learning and
+         contributing to the success of my team.
+         I love creating pages where I'm able to actually create enjoyable interactions and experiences for everyone!</p>
+     
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+      </div>  
+       <div class="tab-contents active-tab" id="skills">
+         <ul>
+          <li>front-end<br>Web Developer</li>
+         </ul>
+       </div>
+       <div class="tab-contents" id="experience">
+        <ul>
+         <li>N/A</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+         <li>Columbio National<br>High School</li>
+         <li>KodeGo.ph</li>
+        </ul>
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-----------services-------->
+
+ <div id="services">
+  <div class="container">
+     <h1>My Services</h1>
+     <div class="services-list">
+
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum.
+        </p>
+        <a href="#">Read more</a>
+      </div>
+
+      <div>
+        <i class="fa-sharp fa-solid fa-crop"></i>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum.
+        </p>
+        <a href="#">Read more</a>
+      </div>
+
+      <div>
+        <i class="fa-sharp fa-solid fa-file"></i>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum.
+        </p>
+        <a href="#">Read more</a>
+      </div>
+     </div>
+   </div>
+ </div>
+
+ <!------portfolio------>
+
+ <div id="Portfolio">
+  <div class="container">
+    <h1>My Work</h1>
+     <div class="work-list">
+       <div class="work">
+        <img src="portfolio1.jpg"> 
+        <div class="layer">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+          <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+        </div>       
+       </div>
+       <div class="work">
+        <img src="portfolio1.jpg">  
+        <div class="layer">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+          <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+        </div>           
+       </div>
+       <div class="work">
+        <img src="portfolio1.jpg"> 
+        <div class="layer">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+          <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+        </div>        
+       </div>
+     </div>
+     <a href="#" class="btn">See more</a>
+  </div>
+ </div>
+
+ <script>
+ var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents");
+
+ function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+ }
+ </script>
+
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>Contact Me</h1>
+    <p>For any information please call me, or leave me a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.8727072642864!2d-71.67731928474798!3d-35.43318318025289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c41ab8c8166d%3A0x49af4fcd98d50467!2sCalle%206%20Pte.%2C%20Talca%2C%20Maule!5e0!3m2!1sen!2scl!4v1664729367229!5m2!1sen!2scl"
+       allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="philippines">philippines</option>
+          <option value="chile">Chile</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" class="btn btn2" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+ 
+
+<footer class="footer-distributed">
+ <div class="footer-left">  
+    <h3>Sheryl<span>Portfolio</span></h3>
+    <p class="footer-links">
+      <a href="active">Home</a>
+      |
+      <a href="active">About</a>
+      |
+      <a href="active">Services</a>
+      |
+      <a href="active">Portfolio</a>
+      |
+      <a href="active">Contact</a>
+    </p>
+
+    <a href="my Cv.jpg" download class="btn btn2">Download CV</a>
+
+    <div class="footer-name">
+    <p>All rights reserved 2023 Copyright @ <a href="#">Sheryl Portfolio</a></p>
+ </div>
+</div>
+
+ <div class="footer-center">
+  <div>
+    <h3>Contact</h3>
+    <i class="fa-solid fa-location-dot"></i>
+     <p>Casa 14 Los Portones,Piedra Roja <br/>Chicureo Chile South America</p>
+       
+  </div>
+
+  <div>   
+    <i class="fa-solid fa-phone"></i>
+    <p>+569 59216674</p>
+  </div>
+
+  <div>
+    <i class="fa-solid fa-envelope"></i>
+    <p><a href="mailto:sherylvelasco340@gmail.com"></a>sherylvelasco340@gmail.com</p>
+  </div>
+ </div>
+
+ <div class="footer-right">
+   <p class="footer-company-about"></p>
+   <span>About Me</span> 
+   <p>I love creating pages where I'm able to actually create enjoyable interactions and experiences for everyone!</p>
+   <div class="footer-icons mt-4">
+     <a href="#"><i class="fa fa-facebook"></i></a>
+     <a href="#"><i class="fa fa-instagram"></i></a>
+     <a href="#"><i class="fa fa-twitter"></i></a>
+     <a href="#"><i class="fa fa-linkedin"></i></a>
+   </div>
+
+ </div>
+</footer>
+</body>
+</html>
